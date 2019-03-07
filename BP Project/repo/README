@@ -1,0 +1,40 @@
+# Bio_signal_ML
+Machine learning codes for Blood Pressure estimation from ECG and PPG signals
+
+
+1. preprocessing.m
+
+Input : Raw Signal (ecg/ppg/abp)
+Output : Preprocessed Signal after applying wavelet transform
+(see code for more comments)
+
+2. feature_extraction.m
+
+Input : Preprocessed ecg, ppg and abp signal in separate (3) variables
+Output : Extracted parameter based and whole based features in separate (2) variables
+(see code for more comments)
+
+3. regg.m
+
+Script to collect features from all ecg and ppg signals
+as well as SBP and DBP from abp signals.
+(see code for more comments)
+
+4. test_validation.m
+
+Script to train and validate the model as well as test on new data using Linear Regression, Random Forrest and LS Boost.
+(see code for more comments)
+
+5. regg_para.m
+
+Script to train and validate the model as well as test on new data using Decision Trees and SVM for parameter based features.
+(see code for more comments)
+
+6. regg_whole.m
+
+Script to train and validate the model as well as test on new data using Decision Trees and SVM for whole based features.
+(see code for more comments)
+
+7. knee_pt.m
+
+Supplementary code to calculate inflection point in ppg curve.
